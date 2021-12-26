@@ -31,7 +31,7 @@ within a wide range of employment areas.`
 ***
 	
 `function sum(a, b) {
-return a + b;
+return (a + b);
 }
 
 let result = sum(1, 2);
