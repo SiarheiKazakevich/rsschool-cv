@@ -15,6 +15,12 @@ h3 {
 	margin-left: 3%;
 	padding-top: 2%;
 }
+.logo {
+	float: right;
+	width: 150px;
+	margin-right: 3%;
+	padding-top: 2%;
+}
 .mainscrin {
 	height: 250px;
 }
@@ -163,4 +169,15 @@ h2 {
 .imgenglish {
 	float: right;
 	margin-left: 80px;
+}
+
+/*логотип курса*/
+.logofuter {
+	position: absolute;
+	padding-left: 1.5%;
+	padding-top: 0.4%;
+}
+
+.githubfooter {
+	color: black;
 }
