@@ -38,6 +38,7 @@ A:active {
 	color: #111110; /* Цвет активных ссылок */
 }
 .page-header {
+   width: 100%;
 	background: rgb(189, 189, 183);
 	margin-bottom: 40px;
 }
@@ -180,4 +181,81 @@ h2 {
 
 .githubfooter {
 	color: black;
+}
+
+.sizefoto {
+   width: 450px;
+}
+
+/*аааааааааадаптация мобилка */
+@media (max-width: 639px) {
+body {
+   margin: 0;
+   padding: 0;
+}
+
+
+* {
+   line-height: 20px;
+   margin-left: 0;
+   margin-right: 0;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.mainscrin {
+   height: auto;
+}
+.foto,
+.logo,
+.boxcontacts,
+.info,
+.skills,
+.code,
+.experience,
+.education,
+.english {
+   height: auto;
+   clear: left;
+   clear: right;
+   display: inline-block;
+   text-align: center;
+   vertical-align: middle;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.foto,
+.map,
+.imgaboutme,
+.imgcode,
+.imgexperience,
+.imgeducation,
+.imgenglish
+ {
+   margin-left: 0;
+   clear: both;
+   
+}
+
+.list li {
+   display: block;
+}
+.boxname {
+   margin: 0;
+}
+.foto {
+   padding-left: 10px;
+   margin-bottom: 20px;
+   line-height: 35px;
+}
+h1 {
+   line-height: 25px;
+   font-size: 2em;
+}
+
+
+
 }
