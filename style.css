@@ -24,6 +24,9 @@ h3 {
 .mainscrin {
 	height: 250px;
 }
+.maintext {
+   display: inline;
+}
 ul {
 	list-style: none; /*убираем маркеры списка*/
 	margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
