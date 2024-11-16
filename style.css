@@ -1,264 +1,356 @@
-body {
-   padding: 0;
-   margin: 0 10%;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
+
+
+.mainwraper {
+	width: 100%;
+	max-width: 1440px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
 h1 {
-   font-size: 40px;
+	font-size: 40px;
 }
+
 h3 {
-   font-size: 18px;
+	font-size: 18px;
 }
 
 .foto {
-   float: left;
-   width: 150px;
-   margin-left: 3%;
-   padding-top: 2%;
+	/*float: left;*/
+	width: 150px;
+	height: 150px;
+	margin-left: 3%;
+	padding-top: 2%;
 }
-.logo {
-   float: right;
-   width: 150px;
-   margin-right: 3%;
-   padding-top: 2%;
-}
-.mainscrin {
-   height: 250px;
-}
-.maintext {
-   display: inline;
-}
-ul {
-   list-style: none; /*убираем маркеры списка*/
-   margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
-   padding-left: 0; /*убираем левый отступ, равный 40px*/
-}
-a {
-   text-decoration: none;
-   text-transform: uppercase;
-   color: rgb(247, 240, 240); /*убираем подчеркивание текста ссылок*/
-}
-A:active {
-   color: #111110; /* Цвет активных ссылок */
-}
+
 .page-header {
-   width: 100%;
-   background: rgb(189, 189, 183);
-   margin-bottom: 40px;
+	width: 100%;
+	max-width: 1440px;
+	height: auto;
+	background: rgb(189, 189, 183);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
 }
+
+.wraperheadermaincontent {
+	width: 100%;
+	max-width: 1240px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
 .boxname {
-   margin: 0 30%;
-   text-align: center;
-   padding-top: 30px;
+	margin: 0px 30% 0px 20%;
+	text-align: center;
+	padding-top: 30px;
 }
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(247, 240, 240);
+}
+
+A:active {
+	color: #111110;
+}
+
 .boxnav {
-   padding-top: 70px;
+	width: 100%;
+	max-width: 1440px;
+	height: auto;
+	padding-top: 70px;
 }
+
 .list {
-   color: rgb(248, 242, 242);
-   font-size: 20px;
-   list-style: none;
-   margin: 0 0 0 0;
-   padding: 15px 0 10px;
-   text-align: center;
-   background: rgb(118, 118, 119);
-   word-spacing: 17px;
+	color: rgb(248, 242, 242);
+	font-size: 20px;
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 15px 0 10px;
+	text-align: center;
+	background: rgb(118, 118, 119);
+	word-spacing: 17px;
 }
 
 .list li {
-   color: rgb(250, 245, 245);
-   display: inline-block;
-   text-decoration: none;
+	color: rgb(250, 245, 245);
+	display: inline-block;
+	text-decoration: none;
 }
+
+
+
+
+
 /*второй экран*/
 h2 {
-   font-size: 30px;
-   margin-bottom: 2em;
-}
-.map {
-   width: 25;
-   float: right;
+	font-size: 30px;
+	margin-bottom: 2em;
 }
 
 .boxcontacts {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-   background-color: #aaa;
-   background-image: #aaa;
-   background-position: #aaa;
-   background-repeat: #aaa;
-   background: #aaa;
+	max-width: 1440px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding-top: 50px;
+	text-align: center;
+	background: #aaa;
+	margin: 0px 0px 0px 0px;
 }
 
 .boxcontacts li {
-   margin-bottom: 1em;
-   font-size: 22px;
+	margin-bottom: 1rem;
+	font-size: 2rem;
 }
 
-/*третий экран*/
-.info {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-   line-height: 40px;
-   font-size: 18px;
-}
-.imgaboutme {
-   float: right;
-   margin-left: 80px;
+.mapcontentwraper {
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0px 0px 40px 0px;
 }
 
-/*четвертый экран*/
-.skills {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-}
-.skills li {
-   margin-bottom: 1em;
-   font-size: 22px;
-}
-/*пятый экран*/
-.code {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-   line-height: 40px;
-   font-size: 18px;
-}
-.imgcode {
-   float: right;
-   margin-left: 80px;
-}
-/*шестой экран*/
-.experience {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-   line-height: 40px;
-}
-.imgexperience {
-   float: right;
-   margin-left: 80px;
-}
-.experience li {
-   margin-bottom: 1.5em;
-   font-size: 22px;
-   /*font-weight: bold;*/
-}
-/*седьмой экран*/
-.education {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-   line-height: 40px;
-}
-.imgeducation {
-   float: right;
-   margin-left: 80px;
-}
-.education li {
-   font-size: 22px;
-   /*font-weight: bold;*/
-}
-/*восьмой экран*/
-.english {
-   width: 100%;
-   height: 300px;
-   margin-top: 100px;
-   text-align: center;
-   line-height: 40px;
-   font-size: 22px;
-}
-.imgenglish {
-   float: right;
-   margin-left: 80px;
-}
-
-/*логотип курса*/
-.logofuter {
-   position: absolute;
-   padding-left: 1.5%;
-   padding-top: 0.4%;
-}
-
-.githubfooter {
-   color: black;
+.map {
+	background-image: url('./assets/img/map5.jpg');
 }
 
 .sizefoto {
-   width: 450px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 250px;
+}
+
+
+/*третий экран*/
+.info {
+	max-width: 1440px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding-top: 50px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+.infocontainerwraper {
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0px 0px 40px 0px;
+}
+
+.imgaboutme {
+	background-image: url('./assets/img/aboutMe.jpg');
+	background-size: contain;
+}
+
+.textaboutme {
+	width: 500px;
+	font-size: 20px;
+}
+
+
+
+/*четвертый экран*/
+
+
+.skills li {
+	margin-bottom: 1em;
+	font-size: 22px;
+}
+
+.skillscontentwraper {
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0px 0px 40px 0px;
+}
+
+.skillsimage {
+	background-image: url('./assets/img/skills.jpg');
+}
+
+.skillstextwraper {
+	width: 500px;
+}
+
+
+/*пятый экран*/
+
+.imgcode {
+	background-image: url('./assets/img/code.jpg');
+}
+
+
+/*шестой экран*/
+.imgexperience {
+	background-image: url('./assets/img/experience.jpg');
+}
+
+.experience li {
+	margin-bottom: 1.5em;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/*седьмой экран*/
+
+.imgeducation {
+	background-image: url('./assets/img/education.jpg');
+}
+
+.education li {
+	font-size: 22px;
+	/*font-weight: bold;*/
+}
+
+/*восьмой экран*/
+
+.imgenglish {
+	background-image: url('./assets/img/english.jpg');
+}
+
+/*------------------проверка-------------------*/
+
+/*логотип курса*/
+.footer {
+	width: 100%;
+	max-width: 1440px;
+	height: 30px;
+}
+
+.footer-boxnav {
+	padding-top: 0px;
+}
+
+.logofuter {
+	background-image: url('./assets/svg/rsschool.svg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+
+}
+
+.githubfooter {
+	color: black;
 }
 
 /*аааааааааадаптация мобилка */
 @media (max-width: 639px) {
-   body {
-      margin: 0;
-      padding: 0;
-   }
+	body {
+		margin: 0;
+		padding: 0;
+	}
 
-   * {
-      line-height: 20px;
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 0;
-      padding-right: 0;
-   }
+	* {
+		line-height: 20px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-   .mainscrin {
-      height: auto;
-   }
-   .foto,
-   .logo,
-   .boxcontacts,
-   .info,
-   .skills,
-   .code,
-   .experience,
-   .education,
-   .english {
-      height: auto;
-      clear: left;
-      clear: right;
-      display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-   }
-   .foto,
-   .map,
-   .imgaboutme,
-   .imgcode,
-   .imgexperience,
-   .imgeducation,
-   .imgenglish {
-      margin-left: 0;
-      clear: both;
-   }
+	.mainscrin {
+		height: auto;
+	}
 
-   .list li {
-      display: block;
-   }
-   .boxname {
-      margin: 0;
-   }
-   .foto {
-      padding-left: 10px;
-      margin-bottom: 20px;
-      line-height: 35px;
-   }
-   h1 {
-      line-height: 25px;
-      font-size: 2em;
-   }
+	.foto,
+	.logo,
+	.boxcontacts,
+	.info,
+	.skills,
+	.code,
+	.experience,
+	.education,
+	.english {
+		height: auto;
+		clear: left;
+		clear: right;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.foto,
+	.map,
+	.imgaboutme,
+	.imgcode,
+	.imgexperience,
+	.imgeducation,
+	.imgenglish {
+		margin-left: 0;
+		clear: both;
+	}
+
+	.list li {
+		display: block;
+	}
+
+	.boxname {
+		margin: 0;
+	}
+
+	.foto {
+		padding-left: 10px;
+		margin-bottom: 20px;
+		line-height: 35px;
+	}
+
+	h1 {
+		line-height: 25px;
+		font-size: 2em;
+	}
+
+	.boxcontacts li {
+		font-size: 1.5rem;
+	}
 }
