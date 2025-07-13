@@ -282,6 +282,22 @@ h2 {
   color: rgb(255, 196, 0);
 }
 
+.visually-hidden-link {
+  position: relative;
+  display: inline-block;
+}
+
+.visually-hidden-link span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 /*аааааааааадаптация мобилка */
 @media (max-width: 639px) {
   body {
